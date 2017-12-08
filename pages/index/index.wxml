@@ -1,0 +1,30 @@
+<!--camera.wxml
+这个页面由<view/> 和<image/>、<text>三个组件来构建页面结构
+-->
+<view class="container" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称
+        </button>
+        <block wx:else>
+            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"/>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+    </view>
+
+    <view class='marqueeView'> 这老是什么玩意</view>
+
+    <view class='marqueeView'> what's up</view>
+
+
+    <view bindtap="bindViewTag" class="userinfo">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}}" background-size="cover"/>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+
+
+    <view class="usermotto">
+        <text class="user-motto">{{motto}}</text>
+    </view>
+
+
+</view>

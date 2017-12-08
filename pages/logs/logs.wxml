@@ -1,0 +1,14 @@
+<!--logs.wxml
+使用block控制标签来组织代码，在block 上使用控制属性 wx:for绑定logs数据，并将logs数据循环展开节点
+-->
+<view class="container log-list">
+    <block wx:for="{{logs}}" wx:for-item="log">
+        <text class="log-item">{{index + 1}}. {{log}}</text>
+    </block>
+
+    <!--<view class='search_log'></view>-->
+
+    <!--<input class='seach_input' bindfocus='bindFocusStyle' placeholder='搜索'></input>-->
+
+
+</view>

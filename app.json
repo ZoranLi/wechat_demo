@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/camera/camera"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "color": "#ff0000",
+        "borderStyle": "black",
+        "selectedColor": "#ff3167",
+        "backgroundColor": "#ff0000",
+        "iconPath": "images/xhc_tabbar_home_normal.png",
+        "selectedIconPath": "images/xhc_tabbar_home_press.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "商城",
+        "selectedColor": "#ff3167",
+        "iconPath": "images/xhc_tabbar_act_normal.png",
+        "selectedIconPath": "images/xhc_tabbar_act_press.png"
+      },
+      {
+        "pagePath": "pages/camera/camera",
+
+        "selectedColor": "#ff3167",
+        "text": "拍摄",
+        "iconPath": "images/xhc_tabbar_act_normal.png",
+        "selectedIconPath": "images/xhc_tabbar_act_press.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "selectedColor": "#ff3167",
+        "text": "发现",
+        "iconPath": "images/xhc_tabbar_act_normal.png",
+        "selectedIconPath": "images/xhc_tabbar_act_press.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "images/xhc_tabbar_act_normal.png",
+        "selectedColor": "#ff3167",
+        "selectedIconPath": "images/xhc_tabbar_act_press.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000,
+    "uploadFile":10000,
+    "connectSocket":10000
+  },
+  "debug": true
+}

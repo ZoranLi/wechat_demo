@@ -1,0 +1,57 @@
+<!--camera.wxml-->
+<view class="container" xmlns:wx="http://www.w3.org/1999/xhtml">
+
+    <!--<form bindsubmit='formSubmit' bindreset='formReset'>-->
+
+    <!--<view class='section section_gap'>-->
+    <!--<view class='section_title'>switch</view>-->
+    <!--&lt;!&ndash;switch按钮  &ndash;&gt;-->
+    <!--<switch name="switch"></switch>-->
+    <!--</view>-->
+
+    <!--<view class='btn-area'>-->
+    <!--<button form-type='submit'>submit</button>-->
+    <!--<button form-type='reset'>reset</button>-->
+    <!--</view>-->
+    <!--</form>-->
+
+
+    <view>{{text}}}</view>
+    <view>{{array[0].msg}}}</view>
+    <button bindtap="changeText">Change normal data</button>
+
+    <button bindtap="changeItemInObject">Change Object data</button>
+    <view wx:for="{{array}}">{{item.msg}}</view>
+
+    <!--条件渲染-->
+    <view wx:if="{{1 == 1}}">WebView</view>
+    <view wx:elif="{{view == 'APP'}}">APP</view>
+    <view wx:elif="{{view == 'MINA'}}">MINA</view>
+
+    <!--模板-->
+    <template name="staffName">
+        <view>
+            FirstName:{{firstName}},LastName:{{lastName}}
+        </view>
+    </template>
+
+    <view bindtap="add">{{count}}</view>
+
+    <view id="item-{{id}}" hidden="{{condition?true:false}}">
+        Hidden
+    </view>
+
+    <view class="flex-wrp" style="flex-direction: column">
+        <view class="flex-item bc_green">1</view>
+        <view class="flex-item bc_red">2</view>
+        <view class="flex-item bc_yellow">3</view>
+    </view>
+
+    <swiper indicator-dots="true" autoplay="true">
+        <swiper-item>
+            <image src='{{item}}' width="335" height="150" class='slid-image'></image>
+        </swiper-item>
+    </swiper>
+
+    <view id="view_id" ></view>
+</view>

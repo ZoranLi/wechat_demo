@@ -1,0 +1,28 @@
+/**index.wxss**/
+/*index.wxml的样式表，也可以在页面结构中使用样式*/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  /*margin-top: 400rpx;*/
+}
+.marqueeView{
+  margin-top: 20px;
+  color:#ff3167;
+  font-size: 0.5em;
+}
+/*em	相对	相对父元素的字体大小*/
